@@ -7,7 +7,7 @@ window.ethers = ethers;
 document.addEventListener('DOMContentLoaded', () => {
     
     // --- 1. STATE & CONFIGURATION ---
-    const BASE_RPC_URL = import.meta.env.VITE_BASE_RPC_URL;
+    const BASE_RPC_URL = 'https://weathered-fluent-energy.base-mainnet.quiknode.pro/b6a41cf0a751523ef908422bcafc08721bc891ed';
     const BASE_CHAINLINK_POL_USD_PRICE_FEED = '0x5e988c11a4f92155c30d9fb69ed75597f712b113';
     const CHAINLINK_PRICE_FEED_ABI = [
         "function latestRoundData() view returns (uint80 roundId, int256 answer, uint256 startedAt, uint256 updatedAt, uint80 answeredInRound)",
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
             themeClass: 'eth-main',
             searchName: 'Ethereum',
             coingeckoId: 'ethereum',
-            rpcUrl: import.meta.env.VITE_ETH_RPC_URL,
+            rpcUrl: 'https://eth-mainnet.g.alchemy.com/v2/5dBuUAW0iwOIgC-T0tFKN',
             symbol: 'ETH',
             chainId: 1
         },
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
             themeClass: 'polygon-main',
             searchName: 'Polygon',
             useChainlink: true,
-            rpcUrl: import.meta.env.VITE_POLYGON_RPC_URL,
+            rpcUrl: 'https://polygon-mainnet.g.alchemy.com/v2/pwxO9HN4ssmBwt0UiGaR40SpxbTXgutM',
             symbol: 'POL',
             chainId: 137
         }
